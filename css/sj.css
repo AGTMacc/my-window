@@ -1,0 +1,289 @@
+body html {
+  width: 100%;
+  height: 100%;
+}
+#layout {
+  margin: 0 auto;
+  min-width: 375px;
+  background-image: url(../images/sjbj.jpg);
+  background-size: cover;
+}
+.section-1 {
+  padding: 5rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-1 > ul {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.section-1 > ul li {
+  font-family: '华文行楷';
+  font-size: 2.4rem;
+  color: #fff;
+  box-sizing: border-box;
+}
+.section-1 > ul li:hover {
+  border-bottom: 0.1rem solid #fff;
+  border-radius: 20%;
+  box-shadow: 0 0.3rem 0.1rem -0.1rem #fff;
+}
+.section-1 > div {
+  margin: 2rem auto;
+  width: 70%;
+  height: 4rem;
+  border-bottom: 0.2rem solid #fff;
+}
+.section-1 > div > input {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+.section-1 > a {
+  background-color: #fff;
+  border-radius: 3rem;
+  width: 15%;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  font-family: '华文行楷';
+  font-size: 2rem;
+}
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: '华文行楷';
+  color: #fff;
+}
+.section-2 .poem {
+  margin: 3rem 0 8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-2 .poem p {
+  margin: 0.7rem 0;
+  padding: 0.5rem 0;
+  color: #fff;
+  font-size: 2.2rem;
+  white-space: nowrap;
+  display: inline-block;
+}
+.section-2 .poem p:nth-child(2) {
+  transform: translateX(3rem);
+}
+.section-2 .module {
+  width: 90%;
+  background-color: rgba(9, 9, 9, 0.2);
+  border-radius: 0.5rem;
+  margin-bottom: 3rem;
+}
+.section-2 .module > p {
+  text-align: center;
+  font-size: 2.2rem;
+  line-height: 4rem;
+  margin-top: 1rem;
+}
+.section-2 .module > ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2rem 3rem;
+}
+.section-2 .module > ul > li {
+  text-align: center;
+  width: 33.33%;
+  font-size: 1.8rem;
+}
+.section-2 .website > p > i {
+  color: lightblue;
+  margin-left: 0.5rem;
+  font-size: 2.2rem;
+  vertical-align: middle;
+}
+.section-2 .cartoon > P > i {
+  color: #fd9337;
+  margin-left: 5rem;
+  font-size: 2.2rem;
+  vertical-align: middle;
+}
+.section-2 .music > p > i {
+  color: red;
+  margin-left: 0.5rem;
+  font-size: 2.2rem;
+  vertical-align: middle;
+}
+.section-2 .music > ul > li > i {
+  color: red;
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+  vertical-align: middle;
+}
+.section-2 .music > ul > li:nth-child(2) > i {
+  color: yellow;
+}
+.section-2 .music > ul > li:nth-child(3) > i {
+  color: blue;
+}
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: '华文行楷';
+  color: #fff;
+}
+.section-3 h2 {
+  text-align: center;
+  line-height: 5rem;
+}
+.section-3 .box1 {
+  width: 90%;
+}
+.section-3 .box1 .box1-main .box1-img {
+  float: left;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.section-3 .box1 .box1-main .box1-img .box1-img:hover > div {
+  animation-play-state: running;
+}
+.section-3 .box1 .box1-main .box1-img > div {
+  width: 40%;
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+}
+.section-3 .box1 .box1-main .box1-img > div > img {
+  width: 100%;
+  border-radius: 50%;
+}
+.section-3 .box1 .box1-main .box1-img > div:nth-child(1) {
+  animation: move1 5s infinite linear;
+}
+.section-3 .box1 .box1-main .box1-img > div:nth-child(2) {
+  animation: move2 5s infinite linear;
+}
+.section-3 .box1 .box1-main .box1-img > div:nth-child(3) {
+  animation: move3 5s infinite linear;
+}
+.section-3 .box1 .box1-main .box1-img > div:nth-child(4) {
+  animation: move4 5s infinite linear;
+}
+@keyframes move1 {
+  25% {
+    transform: translate(101.5%, 0);
+  }
+  50% {
+    transform: translate(101.5%, 101.5%);
+  }
+  75% {
+    transform: translate(0, 101.5%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes move2 {
+  25% {
+    transform: translate(0, 101.5%);
+  }
+  50% {
+    transform: translate(-101.5%, 101.5%);
+  }
+  75% {
+    transform: translate(-101.5%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes move3 {
+  25% {
+    transform: translate(0, -101.5%);
+  }
+  50% {
+    transform: translate(101.5%, -101.5%);
+  }
+  75% {
+    transform: translate(101.5%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes move4 {
+  25% {
+    transform: translate(-101.5%, 0);
+  }
+  50% {
+    transform: translate(-101.5%, -101.5%);
+  }
+  75% {
+    transform: translate(0, -101.5%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.section-3 .box1 .box1-text {
+  float: right;
+  width: 50%;
+}
+.section-3 .box1 .box1-text p {
+  font-size: 1.6rem;
+  padding: 0.5rem 0;
+}
+.box2 {
+  overflow: hidden;
+  width: 90%;
+}
+.box2 .box2-main {
+  width: 100%;
+}
+.box2 .box2-main .box2-img {
+  float: right;
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box2 .box2-main .box2-img > div {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.box2 .box2-main .box2-img > div > img {
+  width: 100%;
+}
+.box2 .box2-main .box2-text {
+  float: left;
+  width: 60%;
+}
+.box2 .box2-main .box2-text p {
+  font-size: 1.6rem;
+  width: 100%;
+  padding-right: 3rem;
+  line-height: 2.8rem;
+  text-indent: 2em;
+  white-space: normal;
+}
+.box3 {
+  width: 90%;
+  margin-bottom: 10rem;
+}
+.box3 .box3-img {
+  width: 100%;
+}
+.box3 .box3-img .swiper-slide {
+  width: 33.33%;
+}
+.box3 .box3-img .swiper-slide img {
+  width: 100%;
+}

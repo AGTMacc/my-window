@@ -1,0 +1,149 @@
+﻿<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>登录</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            cursor: none;
+            background: black;
+            background: linear-gradient(to bottom, #000000 0%, #5788fe 100%);
+        }
+
+        .filter {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #fe5757;
+            animation: colorChange 30s ease-in-out infinite;
+            animation-fill-mode: both;
+            mix-blend-mode: overlay;
+        }
+
+        @keyframes colorChange {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: .9;
+            }
+        }
+
+        .landscape {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /*background-image:url(https://openclipart.org/image/2400px/svg_to_png/250847/Trees-Landscape-Silhouette.png);
+        */
+            background-image: url('./images/xkbg.png');
+            background-size: 1000px 250px;
+            background-repeat: repeat-x;
+            background-position: center bottom;
+        }
+
+
+        .login {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 140px;
+            border: 1px solid rgba(255, 255, 255, .5);
+            background-color: rgba(255, 255, 255, .1);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+        }
+
+        input {
+            margin: 10px 0;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, .5);
+            outline: none;
+            background-color: transparent;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, .5);
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 35px;
+            width: 100px;
+            height: 35px;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, .5);
+            transition: all .4s;
+
+        }
+
+        @keyframes move {
+            0% {
+                margin-left: 0;
+            }
+
+            50% {
+                margin-left: 2px;
+            }
+
+            100% {
+                margin-left: -2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="landscape">
+
+    </div>
+    <div class="filter"></div>
+    <canvas id="canvas" width="1536" height="604"></canvas>
+    <div class="login">
+        <input type="text" placeholder="请输入用户名">
+        <input type="text" placeholder="请输入密码">
+        <a href="javascript:;">登录</a>
+    </div>
+    <script src="./js/星空canvas.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('a').click(function (e) {
+                if ($('input').eq(0).val() == '刘哲' && $('input').eq(1).val() == '123') {
+                    $('input').val('')
+                    $('a').attr('href', './index.html')
+                } else {
+                    $('input').val('')
+                    $('a').attr('href', 'javascript:;')
+                    $('.login').css('animation', ' move .1s 5')
+                    setTimeout(function () {
+                        $('.login').css('animation', '')
+                    }, 200)
+                }
+
+            })
+        })
+
+    </script>
+</body>
+
+</html>

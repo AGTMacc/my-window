@@ -1,0 +1,30 @@
+{
+  "id": "3480793",
+  "name": "个人移动端",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7450649",
+      "name": "音乐",
+      "font_class": "yinle",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "18165538",
+      "name": "书籍,知识,书",
+      "font_class": "book-full",
+      "unicode": "e895",
+      "unicode_decimal": 59541
+    },
+    {
+      "icon_id": "24111730",
+      "name": "动漫",
+      "font_class": "dongman",
+      "unicode": "fb79",
+      "unicode_decimal": 64377
+    }
+  ]
+}

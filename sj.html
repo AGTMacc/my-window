@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/sj.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+    <!-- <link rel="shortcut icon" href=""> -->
+</head>
+<style>
+    @font-face {
+        font-family: 'iconfont';
+        src: url('iconfont.woff2?t=1655953233051') format('woff2'),
+            url('iconfont.woff?t=1655953233051') format('woff'),
+            url('iconfont.ttf?t=1655953233051') format('truetype');
+    }
+
+    .iconfont {
+        font-family: "iconfont" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+</style>
+
+<body>
+    <!-- 布局容器 -->
+    <div id="layout">
+        <!-- 顶部栏 -->
+        <section class="section-1">
+            <ul>
+                <li>搜索</li>
+                <li>必应</li>
+                <li>Doge</li>
+                <li>百度</li>
+                <li>GitHub</li>
+            </ul>
+            <div><input type="text"></div>
+            <a href="#">查询</a>
+        </section>
+        <section class="section-2">
+            <div class="poem">
+                <p>有三秋桂子，十里荷花。</p>
+                <p>--柳永《望海潮·东南形胜》</p>
+            </div>
+            <div class="website module">
+                <p><i class="iconfont icon-book-full"></i>站点</p>
+                <ul>
+                    <li>储物间</li>
+                    <li>导航页</li>
+                    <li>图床</li>
+                    <li>Bing</li>
+                    <li>班级博客</li>
+                </ul>
+            </div>
+            <div class="music module">
+                <p><i class="iconfont icon-yinle"></i>音乐</p>
+                <ul>
+                    <li>网易云音乐</li>
+                    <li>QQ音乐</li>
+                    <li>酷狗音乐</li>
+                </ul>
+            </div>
+            <div class="cartoon module">
+                <p><i class="iconfont icon-dongman"></i>动漫</p>
+                <ul>
+                    <li>海贼王</li>
+                    <li>火影忍者</li>
+                    <li>海绵宝宝</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section-3">
+            <div class="box1">
+                <h2>海-贼-王</h2>
+                <div class="box1-main">
+                    <div class="box1-img">
+                        <div><img src="./images/1.jpg" alt=""></div>
+                        <div><img src="./images/2.jpg" alt=""></div>
+                        <div><img src="./images/3.jpg" alt=""></div>
+                        <div><img src="./images/4.jpg" alt=""></div>
+                    </div>
+                    <div class="box1-text">
+                        <p>1、《航海王》是日本漫画家尾田荣一郎作画的少年漫画作品，于1997年07月22日在集英社《周刊少年Jump》开始连载。改编的电视动画《航海王》于1999年10月20日起在富士电视台首播。
+                        </p>
+                        <p>2、2012年05月11日，《航海王》获得第41回日本漫画家协会赏 [1] 。本作被吉尼斯世界纪录官方认证为“世界上发行量最高的单一作者创作的系列漫画” [2] 。
+                        </p>
+                        <p>3、2017年07月21日，日本纪念日协会通过认证，将每年的7月22日设立为“ONE PIECE纪念日” [3] 。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <h2>作品介绍</h2>
+                <div class="box2-main">
+                    <div class="box2-text">
+                        <p>
+                            <b>蒙奇·D·路飞</b>
+                            外号“草帽”路飞，是草帽一伙、草帽大船团船长，四皇 [314] 、极恶的世代之一。橡胶果实（人人果实·幻兽种·尼卡形态）能力者，悬赏金30亿贝里。梦想是找到传说中的大秘宝（ONE
+                            PIECE），成为海贼王。路飞性格积极乐观，爱憎分明，宁死不屈，十分重视伙伴与朋友，对任何危险的事物都超感兴趣。和其他传统的海贼所不同的是，他并不会为了追求财富而杀戮，而是享受着身为海贼的冒险和自由。
+                        </p>
+                    </div>
+                    <div class="box2-img">
+                        <div><img src="./images/14.jpg" alt=""></div>
+                        <div><img src="./images/13.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box3">
+                <h2>精彩图集</h2>
+                <div class="box3-img">
+                    <div class="swiper-container" id="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/5.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/6.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/7.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/9.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/10.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/11.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="./lib/swiper/js/swiper.min.js"></script>
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+                loop: true,
+                autoplay: 1500,//可选选项，自动滑动
+                // 解决自动轮播的时候手动后无法再次自动轮播
+                autoplayDisableOnInteraction: false,
+                slidesPerView: 'auto',
+                effect: 'coverflow'
+            })
+            var fun = function (doc, win) {
+                var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+
+                        //这里是假设在640px宽度设计稿的情况下，1rem = 10px；
+                        //可以根据实际需要修改
+                        docEl.style.fontSize = 10 * (clientWidth / 640) + 'px';
+                    };
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                doc.addEventListener('DOMContentLoaded', recalc, false);
+            }
+            fun(document, window);
+            //如果你初始化时没有定义Swiper实例，后面也可以通过Swiper的HTML元素来获取该实例
+            // new Swiper('.swiper-container')
+            // var mySwiper = document.querySelector('.swiper-container').swiper
+            // mySwiper.slideNext();
+        </script>
+    </div>
+</body>
+
+</html>
